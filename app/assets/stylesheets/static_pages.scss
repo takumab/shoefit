@@ -1,3 +1,52 @@
-// Place all the styles related to the static_pages controller here.
+
+h1 {
+	color: black;
+	padding-top: 40px;
+	font-family: Varela Round, sans-serif;
+}
+
+h2 {
+	font-family: Varela Round, sans-serif;	
+}
+
+/* Navbar */
+.navbar{
+	background-color: #183883;
+
+}
+
+#bs-example-navbar-collapse-1 ul li a {
+	color: #fff;
+	font-family: Varela Round, sans-serif;
+}
+
+#bs-example-navbar-collapse-1 a:hover {
+	color: #E63B19;
+
+}
+ .navbar-header .navbar-brand  {
+	color: #fff;
+	font-family: Varela Round, sans-serif;
+}
+
+.navbar-header .navbar-brand a:hover {
+	color: #E63B19;
+}
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #183885;
+    color: #fff;
+    font-family: Varela Round, sans-serif;
+    text-align: center;
+}
+
+
+/*// Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
