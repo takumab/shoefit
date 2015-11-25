@@ -24,13 +24,15 @@ h2 {
 	color: #E63B19;
 
 }
- .navbar-header .navbar-brand  {
+ .navbar-header .navbar-brand a {
 	color: #fff;
 	font-family: Varela Round, sans-serif;
 }
 
 .navbar-header .navbar-brand a:hover {
 	color: #E63B19;
+	text-decoration: none;
+	background-color: transparent;
 }
 
 /* Footer */
