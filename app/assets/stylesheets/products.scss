@@ -1,2 +1,43 @@
+.show{
+	display: inline;
+	font-family: Oswald, sans-serif;
+	position: relative;
+	left: 10%;
+	word-spacing: 5px;
 
+}
+
+.show a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.col-md-4 {
+	display: block;
+	font-family: Oswald, sans-serif;
+
+}
+
+.my-list {
+	list-style-type: none;
+	font-family: Oswald, sans-serif;
+	font-size: 1.5em;
+	padding: 2%;
+}
  
+.new-product {
+	
+	font-family: Oswald, sans-serif;
+	text-decoration: none;
+	padding-left: 2%;
+	word-spacing: 5px;
+}
+
+.new-product a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+#pro-list {
+	text-align: center;
+}

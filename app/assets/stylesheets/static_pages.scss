@@ -39,6 +39,20 @@ h2 {
 	background-color: transparent;
 }
 
+/* Carousel */
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.carousel-indicators {
+	z-index: 15;
+}
+
+.right.carousel-control a {
+	background-color: transparent;
+}
+
 /* Footer */
 
 .footer {

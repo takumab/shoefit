@@ -27,7 +27,7 @@ a {
 
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: transparent;
   }
 }
 
@@ -70,4 +70,8 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+.footer {
+  z-index: 1;
 }

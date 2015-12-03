@@ -1,35 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<h1 id="pro-list">Shoes</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Colour</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-</table>
+<h1 id="pro-list">Products</h1>
 
 
 
     <% @products.each do |product| %>
+
         
-      <div class="container"> 
-        <div class="row">  
-          <div class="col-xs-4 col-md-4">
-          <%= product.name %>
-          <%= product.description %>
-          <%= product.image_url %>
-            
-            <div><%= link_to 'Show', product %>|</div>
-            <div><%= link_to 'Edit', edit_product_path(product) %>|</div>
-            <div><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div> 
-          </div><!--/.col-md-4-->
-        </div><!--/.row-->
-      </div><!--/.container-->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 col-md-4">
+              <ul class="my-list">
+                  <li><%= product.name %></li>
+                  <li><%= product.description %></li>
+                  <li><%= product.image_url %></li>
+                  <li><%= product.colour %></li>
+              </ul>
+            </div><!--/.col-->  
+          </div><!--/.row-->
+        </div><!--/.container-->
+           <div class="show">
+            <%= link_to 'Details', product %>
+            <%= link_to 'Edit', edit_product_path(product) %>
+            <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
+          </div>
         
       
        
@@ -39,6 +33,7 @@
   
 
 <br>
-
+<div class="new-product">
 <%= link_to 'New Product', new_product_path %>
 <%= link_to 'Products', products_path %>
+</div>
