@@ -45,13 +45,21 @@ h2 {
 	padding-right: 0px;
 }
 
-.carousel-indicators {
-	z-index: 15;
+.carousel-slide {
+	z-index: -1;
 }
 
-.right.carousel-control a {
-	background-color: transparent;
+.carousel-caption {
+	bottom: 59%;
+	left: 8%;
+	font-family: Lato, sans-serif;
 }
+
+.carousel-indicators {
+	bottom: 10%;
+}
+
+
 
 /* Footer */
 
