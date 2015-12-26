@@ -8,6 +8,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Oswald|Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -26,11 +27,22 @@
 		  	  </div>
 	    </div>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	    	<ul class="nav navbar-nav navbar-right">
-	    		<li><%= link_to 'Products', products_path %></li>
-	    		<li><%= link_to 'Orders' , orders_path %></li>
-	    		<li><%= link_to 'About', static_pages_about_path %></li>
-	    		<li><%= link_to 'Contact', static_pages_contact_path %></li>
+	    	<ul class="nav navbar-nav navbar-left">
+	    		<li>
+	    			<%= link_to 'Home', static_pages_landing_page_path %>
+	    		</li>
+	    		<li>
+	    			<%= link_to 'Products', products_path %>
+	    		</li>
+	    		<li>
+	    			<%= link_to 'Orders' , orders_path %>
+	    		</li>
+	    		<li>
+	    		<%= link_to 'About', static_pages_about_path %>
+	    		</li>
+	    		<li>
+	    			<%= link_to 'Contact', static_pages_contact_path %>
+	    		</li>
 	    	</ul>
 	    </div>
 	  </nav>
