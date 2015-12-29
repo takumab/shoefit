@@ -42,6 +42,36 @@
 	text-align: center;
 }
 
+.partial {
+    background-color: aqua;
+    top: 0;
+}
+
+/* Shoe boxes */
+.pros {
+	width: 200px;
+	height: 255px;
+	background-color: #FF0000;
+	position: relative;
+	left: 20%;
+}
+
+.nike-free-styles {
+	text-align: left;
+	word-spacing: -1px;
+	font-family: Oswald, sans-serif;
+	color: #000;
+}
+
+.nike-free-styles h5 {
+	font-size: .8em;
+}
+
+.style_image {
+	margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
 
 
 /* Detail Page */

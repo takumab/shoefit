@@ -45,7 +45,12 @@ h2 {
 	padding-right: 0px;
 }
 
-.carousel-slide {
+img {
+	margin-left: 0px;
+
+}
+
+.carousel-slide .carousel-indicators {
 	z-index: -1;
 }
 
@@ -57,6 +62,12 @@ h2 {
 
 .carousel-indicators {
 	bottom: 10%;
+}
+
+/* Contact page */
+
+.form-control {
+	width: 25%;
 }
 
 	
