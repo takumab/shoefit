@@ -1,6 +1,10 @@
 <% @products.each do |product| %>
   <div class="container">
     <div class="row">
+       <div class="col-xs-4 col-md-4">
+        <%= link_to image_tag("air_max_95.jpg"), product %> <!-- links to 'Details'/'Show' page -->
+
+      </div>
       <div class="col-xs-4 col-md-4">
         <ul class="my-list">
             <li><%= product.name %></li>
@@ -9,12 +13,14 @@
             <li><%= product.colour %></li>
         </ul>
       </div><!--/.col-->  
+     
     </div><!--/.row-->
-    </div><!--/.container-->
-     <div class="show">
+    <div class="show">
       <%= link_to 'Details', product %>
       <%= link_to 'Edit', edit_product_path(product) %>
       <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
-  </div>
+    </div>
+    </div><!--/.container-->
+     
 
 <% end %>

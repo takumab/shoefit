@@ -1,45 +1,22 @@
 <div class="pContainer">
-<p id="notice"><%= notice %></p>
+	<p id="notice"><%= notice %></p>
 
-<h1 id="pro-list">Products</h1>
-
-<!-- shoe image boxes go here. Similar to Kickz.com's shoe page. -->
-<div class="pros">
-	
-		<div class="img">
-			<%= link_to root_path do %>
-			<%= link_to image_tag "nikeFree.jpg", class: "style_image" %>
-			<% end %>
-			<span>New</span>
-		</div>
-		<div class="nike-free-styles">
-			<h5><strong>Nike Free<strong></h5>
-			<p>A great shoe for runners!</p>
-		</div>
-		<div class="img">
-			<%= link_to root_path do %>
-			<%= link_to image_tag "nikeFree.jpg", class: "style_image" %>
-			<% end %>
-			<span>New</span>
-		</div>
-		<div class="nike-free-styles">
-			<h5><strong>Nike Free<strong></h5>
-			<p>A great shoe for runners!</p>
-		</div>
-	
-</div> <!--/.pros-->
-
-<div class="partial">
-  <%= render "shared/product" %>
-</div>
-
-<br>
-<div class="new-product">
-	<%= link_to 'New Product', new_product_path %>
-	<%= link_to 'Products', products_path %>
-</div>
+	<h1 id="pro-list">Products</h1>
 
 
 
-</div>
+	<div class="partial">
+	  <%= render "shared/product" %>
+	</div>
+
+	<br>
+	<div class="new-product">
+		<%= link_to 'New Product', new_product_path %>
+		<%= link_to 'Products', products_path %>
+	</div>
+</div><!--/.pContainer-->
+
+
+
+
 
