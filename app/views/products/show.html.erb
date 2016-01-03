@@ -20,7 +20,11 @@
 		<%= @product.colour %>
 	</p>
 
+	<button type="button" class="btn btn-default" style="background-color: red;">
+		<%= link_to 'Edit', edit_product_path(@product) %>
+	</button>
+	<button type="button" class="btn btn-default" style="background-color: red;">
+		<%= link_to 'Back', products_path %>
+	</button>
 	
-	<%= link_to 'Edit', edit_product_path(@product) %> |
-	<%= link_to 'Back', products_path %>
 </div>
