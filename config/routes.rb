@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :products
 
   resources :orders, only: [:index, :show, :create, :destroy]
+  get 'static_pages/about', to: redirect('static_pages/contact') #change after lesson submission
+
   get 'static_pages/about'
 
   get 'static_pages/contact'
@@ -10,14 +12,20 @@ Rails.application.routes.draw do
 
   get 'static_pages/landing_page'
 
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#landing_page'
+  root 'static_pages#index'
+
+
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+    #get 'products/:id' => 'products#show'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
