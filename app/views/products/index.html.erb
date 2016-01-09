@@ -1,21 +1,22 @@
-<div class="pContainer">
-	<p id="notice"><%= notice %></p>
+<section>
+	<div class="pContainer">
+		<p id="notice"><%= notice %></p>
 
-	<h1 id="pro-list">Products</h1>
+		<h1 id="pro-list">Products</h1>
+		
 
 
+		<div class="partial">
+		  <%= render "shared/product" %>
+		</div>
 
-	<div class="partial">
-	  <%= render "shared/product" %>
-	</div>
-
-	<br>
-	<div class="new-product">
-		<%= link_to 'New Product', new_product_path %>
-		<%= link_to 'Products', products_path %>
-	</div>
-</div><!--/.pContainer-->
-
+		<br>
+		<div class="new-product">
+			<%= link_to 'New Product', new_product_path %>
+			<%= link_to 'Products', products_path %>
+		</div>
+	</div><!--/.pContainer-->
+</section>
 
 
 

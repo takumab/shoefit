@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :products
 
   resources :orders, only: [:index, :show, :create, :destroy]
-  get 'static_pages/about', to: redirect('static_pages/contact') #change after lesson submission
 
   get 'static_pages/about'
 
