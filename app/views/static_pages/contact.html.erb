@@ -1,17 +1,23 @@
 <h1 style="font-family: Oswald, sans-serif;">Contact Us</h1>
-<form>
-	<div class="form-group">
-		<label for="name">Name</label>
-		<input type="text" class="form-control" id="name" placeholder="Enter full name">
-	</div>
-	<div class="form-group">
-		<label for="email">Email address</label>
-		<input type="email" class="form-control" id="email" placeholder="Enter email address">
-	</div>
-	<label for="message-box">Hit us!</label>
-
-	<textarea style="resize: none" cols="40" rows="5" class="form-control" id="message-box" placeholder="Your message here"></textarea>
-
-	<button type="button" class="btn btn-default" style="margin-top: 5px;">Submit</button>
-</form>
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+	<div class="col-md-4">
+		<div class="form-group">
+		<%= label_tag :name, "Name" %>
+		<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter full name" %>
+		</div>
+		<div class="form-group">
+		<%= label_tag :email, "Email" %>
+		<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter email address" %>
+		</div>
+		<div class="form-group">
+		<%= label_tag :message, "Message" %>
+		<%= text_field_tag :message, nil, class: "form-control", placeholder: "Enter message" %>
+		</div>
+	</div> <!-- ./col-md-4 -->
+</div> <!-- /.row -->
+<%= submit_tag "Send" %>
+<% end %>
+	
+	
 
