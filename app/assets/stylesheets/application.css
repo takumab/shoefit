@@ -16,3 +16,7 @@
  .navbar-left {
   	margin-left: 50px;
  }
+
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
