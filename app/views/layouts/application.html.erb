@@ -44,9 +44,9 @@
 	    			<%= link_to 'Contact', static_pages_contact_path %>
 	    		</li>
 	    		<li>
-	    			<%= form_tag('/products', method: "get", class: "navbar-form navbar-left") do %>
-	    			<%= text_field_tag(:q, "", class: "form-control", placeholder: "Search") %>
-	    			<%= submit_tag("Search", class: "btn btn-default") %>
+	    			<%= form_tag('/products', method: "get", class: "navbar-form navbar-left hidden-xs") do %>
+	    			<%= text_field_tag(:q, "", class: "form-control hidden-xs", placeholder: "Search") %>
+	    			<%= submit_tag("Search", class: "btn btn-default hidden-xs") %>
 	    			<% end %>
 	    		</li>
 	    	</ul>

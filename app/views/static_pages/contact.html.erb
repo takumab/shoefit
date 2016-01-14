@@ -1,7 +1,8 @@
-<h1 style="font-family: Oswald, sans-serif;">Contact Us</h1>
+
 <%= form_tag("/static_pages/thank_you") do %>
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-4" id="c-form">
+		<h1 style="font-family: Oswald, sans-serif;">Contact Us</h1>
 		<div class="form-group">
 		<%= label_tag :name, "Name" %>
 		<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter full name" %>
@@ -14,9 +15,10 @@
 		<%= label_tag :message, "Message" %>
 		<%= text_field_tag :message, nil, class: "form-control", placeholder: "Enter message" %>
 		</div>
+		<%= submit_tag "Send" %>
 	</div> <!-- ./col-md-4 -->
 </div> <!-- /.row -->
-<%= submit_tag "Send" %>
+
 <% end %>
 	
 	

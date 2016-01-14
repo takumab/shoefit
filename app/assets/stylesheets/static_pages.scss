@@ -64,10 +64,30 @@ img {
 	bottom: 10%;
 }
 
+/* About page */
+#about {
+	text-align: center;
+}
+
+#us {
+	margin-top: 60px;
+}
+
+.newbalance {
+	position: relative;
+	left: -25%;
+
+}
+
 /* Contact page */
 
 .form-control {
 	width: 25%;
+}
+
+#c-form {
+	position: relative;
+	left: 3%;
 }
 
 /* Thank you */
