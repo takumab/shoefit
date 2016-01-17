@@ -49,5 +49,7 @@ group :production do
 	gem 'rails_12factor'
 	gem 'pg'
 end
+# You want devise to run in both development and production that's why gem 'devise' is placed here
+gem 'devise'
 
 

@@ -1,7 +1,8 @@
 class OrdersController < ApplicationController
-
+	before_action :authenticate_user!
+	
 	def index
-		@products = Product.all 
+		@products = Product.all
 	end
 
 	def show

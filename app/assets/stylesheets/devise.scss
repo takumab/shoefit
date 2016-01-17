@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+/* Edit Page */
+
+.form-edit-heading {
+	text-align: left;
+	font-family: Oswald, sans-serif;
+}
+
+input[type=button].btn-block, 
+input[type=reset].btn-block, 
+input[type=submit].btn-block {
+	width: 25%;
+}
+
+#edit {
+	position: relative;
+	bottom: 85px;
+	left: 27%;
+
+}
+
+#cancel {
+	font-family: Oswald, sans-serif;
+	position: relative;
+	top: -80px;
+	left: 36.3%;
+	text-align: left;
+	width: 20%;
+}
+
+#cancel a:hover {
+	color: #0048BA;
+	text-decoration: none;
+}
+
+/* Sign up Page */
+
+.btn-info {
+	font-family: Oswald, sans-serif;
+	position: relative;
+	top: -80px;
+	left: 36.3%;
+	text-align: center;
+	width: 20%;
+	font-size: 1.5em;
+}
+
+#info {
+	color: #fff;
+}
+
+#submit {
+	font-family: Oswald, sans-serif;
+}
+
+#sign-up {
+	position: relative;
+	bottom: 85px;
+	left: 27%;
+}
+
+/* Log in */
+
+#log-in {
+	position: relative;
+	bottom: 85px;
+	left: 27%;
+}
+
+.forgot {
+	position: relative;
+	bottom: 85px;
+	left: 36.3%;
+}
+
+.forgot a:hover {
+	color: #0048BA;
+	text-decoration: none;
+}
+

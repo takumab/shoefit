@@ -20,9 +20,20 @@ h2 {
 
 }
 
+.pull-right {
+	display: inline;
+}
+
+#log {
+	margin: 5px 40px 0 0;
+}
+
+
+
 #bs-example-navbar-collapse-1 ul li a {
 	color: #fff;
 	font-family: Oswald, sans-serif;
+	font-size: 1.2em;
 }
 
 #bs-example-navbar-collapse-1 a:hover {

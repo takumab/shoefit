@@ -12,6 +12,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<!-- Displays welcome msg when you sign in -->
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
 	<nav class="navbar navbar-default navbar-fixed-top">
   		<div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,8 +53,22 @@
 	    			<% end %>
 	    		</li>
 	    	</ul>
+	    	<div class="row">
+				<ul class="nav pull-right">
+		    		<li class="col-xs-3">
+		    			<%= link_to('Sign up', new_user_registration_path) %>
+		    		</li>
+		    		<li class="col-xs-3" id="log">
+		    			<% if user_signed_in? %>
+		    				<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+		    			<% else %>
+		    				<%= link_to('Login', new_user_session_path) %>
+		    			<% end %>
+		    		</li>	
+	    		</ul>
+			</div>
+	    	
 	    </div>
-	    
 	  </nav>
 	
 	<footer class="footer">
