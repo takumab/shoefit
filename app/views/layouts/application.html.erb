@@ -13,8 +13,18 @@
 </head>
 <body>
 	<!-- Displays welcome msg when you sign in -->
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<% if notice %>
+		<div id="notice_wrapper">	
+			<p id="notice" class="alert alert-info"><%= notice %></p>
+		</div>
+	<% end %>
+
+	<% if alert %>
+		<div id="notice_wrapper">	
+			<p id="alert" class="alert alert-info"><%= alert %></p>
+		</div>
+	<% end %>
+
 	<nav class="navbar navbar-default navbar-fixed-top">
   		<div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
