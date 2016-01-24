@@ -52,4 +52,5 @@ end
 # You want devise to run in both development and production that's why gem 'devise' is placed here
 gem 'devise'
 
+gem 'cancancan', '~> 1.10'
 
