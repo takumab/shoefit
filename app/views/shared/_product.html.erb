@@ -1,32 +1,34 @@
-<% @products.each do |product| %>
   <div class="container">
     <div class="row">
-       <div class="col-xs-4 col-md-4">
-        <%= link_to image_tag("air_max_95.jpg"), product %> <!-- links to 'Details'/'Show' page -->
-
-      </div>
+      <% @products.each do |product| %>
+      
       <div class="col-xs-4 col-md-4">
-        <ul class="my-list">
-            <li><%= product.name %></li>
-            <li><%= product.description %></li>
-            <li><%= product.image_url %></li>
-            <li><%= product.colour %></li>
-        </ul>
-      </div><!--/.col-->  
-     
-    </div><!--/.row-->
-    <div class="show">
-      <button type="button" class="btn btn-default" style="background-color: #000;">
-        <%= link_to 'Details', product %>
-      </button>
-      <button type="button" class="btn btn-default" style="background-color: #000;">
-        <%= link_to 'Edit', edit_product_path(product) %>
-      </button>
-      <button type="button" class="btn btn-default" style="background-color: #000;">
-        <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
-      </button>
-    </div>
-    </div><!--/.container-->
-     
+        <%= link_to image_tag("air_max_95.jpg", class: "img-responsive"), product %> <!-- links to 'Details'/'Show' page -->
+        <h4>
+          <%= product.name %>
+        </h4>
+        <p>
+          <%= product.image_url %>
+        </p>
+        <p>
+          <%= product.description %>
+        </p>
+        <p>
+          <%= product.colour %>
+        </p>
+        
+          <button type="button" class="btn btn-default">
+            <%= link_to 'Details', product %>
+          </button>
+          <button type="button" class="btn btn-default">
+            <%= link_to 'Edit', edit_product_path(product) %>
+          </button>
+          <button type="button" class="btn btn-default">
+            <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
+          </button>
+        
+      </div> <!-- /col-xs-4 -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
 
 <% end %>
