@@ -13,13 +13,13 @@
 	text-decoration: none;
 }
 
-.col-md-4 {
+/*.col-md-4 {
 	display: block;
 	font-family: Oswald, sans-serif;
-	background-color: #848482;
+	
 	border: 1px #000 solid;
 
-}
+}*/
 
 #big-show {
 position: relative;
@@ -35,11 +35,34 @@ left: 18%;
 	padding-top: 20px;
 	border-radius: 2%;
 	color: #fff;
-	
+	font-family: Oswald, sans-serif;
+	font-size: 1.2em;
 }
 
+.fa-backward {
+	color: #AF002A;
+}
 
- 
+.fa-pencil {
+	color: #AF002A;
+}
+
+.fa-trash {
+	color: #AF002A;
+
+}
+
+#product {
+ 	width: 300px;
+ 	height: 400px;
+ 	padding-top: 20px;
+ 	border-radius: 2%;
+ 	color: #fff;
+ 	background-color: #848482;
+ 	margin: 2%;
+
+ }
+
 .new-product {
 	
 	font-family: Oswald, sans-serif;
@@ -71,14 +94,13 @@ left: 18%;
 
 /* Detail Page */
 
-.detail {
+/*.detail {
 	margin-top: 5%;
-	font-family: Oswald, sans-serif;
-	font-size: 1.2em;
+	
 
 }
 
 .detail a:hover {
 	color: #000;
 	text-decoration: none;
-}
+}*/
