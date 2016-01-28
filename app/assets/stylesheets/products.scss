@@ -1,43 +1,7 @@
-/*.show {
-	display: inline;
-	font-family: Oswald, sans-serif;
-	position: relative;
-	left: 16%;
-	margin-top: -79px;
-	word-spacing: 5px;
 
-} */
 
-.show a:hover {
-	color: #fff;
-	text-decoration: none;
-}
 
-/*.col-md-4 {
-	display: block;
-	font-family: Oswald, sans-serif;
-	
-	border: 1px #000 solid;
-
-}*/
-
-#big-show {
-position: relative;
-top: -50px;
-left: 18%;
-
-}
-
-#show {
-	background-color: #848482;
-	width: 300px;
-	height: 400px;
-	padding-top: 20px;
-	border-radius: 2%;
-	color: #fff;
-	font-family: Oswald, sans-serif;
-	font-size: 1.2em;
-}
+/* Font awesome */
 
 .fa-backward {
 	color: #AF002A;
@@ -52,14 +16,17 @@ left: 18%;
 
 }
 
+/* Products Page */
+
 #product {
  	width: 300px;
- 	height: 400px;
+ 	height: 430px;
  	padding-top: 20px;
  	border-radius: 2%;
  	color: #fff;
  	background-color: #848482;
  	margin: 2%;
+ 	display: inline;
 
  }
 
@@ -67,7 +34,7 @@ left: 18%;
 	
 	font-family: Oswald, sans-serif;
 	text-decoration: none;
-	position: relative;
+	position: fixed;
 	bottom: 80px;
 	padding-left: 2%;
 	word-spacing: 5px;
@@ -92,15 +59,35 @@ left: 18%;
 
 
 
-/* Detail Page */
+/* Show Page */
 
-/*.detail {
-	margin-top: 5%;
-	
+.show a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+#big-show {
+position: relative;
+top: -50px;
+left: 18%;
 
 }
 
-.detail a:hover {
-	color: #000;
-	text-decoration: none;
-}*/
+#show {
+	background-color: #848482;
+	width: 300px;
+	height: 410px;
+	padding-top: 20px;
+	border-radius: 2%;
+	color: #fff;
+	font-family: Oswald, sans-serif;
+	font-size: 1.2em;
+}
+
+.review {
+	position: relative;
+	bottom: 500px;
+	left: 65%;
+}

@@ -3,7 +3,7 @@
       <% @products.each do |product| %>
       
       <div class="col-xs-4 col-md-4" id="product">
-        <%= link_to image_tag("air_max_95.jpg", class: ["img-responsive", "thumbnail"]), product %> <!-- links to 'Details'/'Show' page -->
+        <%= link_to image_tag(product.image_url, class: ["img-responsive", "thumbnail"]), product %> <!-- links to 'Details'/'Show' page -->
         <h4>
           <%= product.name %>
         </h4>
@@ -15,6 +15,10 @@
         </p>
         <p>
           <%= product.colour %>
+        </p>
+        <p>
+          <strong>Price$:</strong>
+          <%= product.price %>
         </p>
         
           

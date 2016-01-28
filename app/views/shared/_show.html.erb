@@ -1,7 +1,7 @@
 	<div class="container" id="big-show"
 		<div class="row">
 			<div class="col-xs-4" id="show">
-				<%= link_to image_tag("air_max_95.jpg"), @product %>
+				<%= link_to image_tag(@product.image_url), @product %>
 				<h4>
 					<strong><%= @product.name %></strong>
 				</h4>
@@ -19,6 +19,11 @@
 				<p>
 					<strong>Colour</strong>
 					<%= @product.colour %>
+				</p>
+
+				<p>
+					<strong>Price$:</strong>
+					<%= @product.price %>
 				</p>
 
 				<button type="button" class="btn btn-default">

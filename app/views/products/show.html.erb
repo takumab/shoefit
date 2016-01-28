@@ -2,5 +2,14 @@
 	<div class="detail">
 		<%= render "shared/show" %>
 	</div>
-		
+
+	<div class="review">
+		<%= render "new_comment" %>
+		<%= render "comments" %>
+		<p>Averag rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+	</div>
+
+
+
+	
 
