@@ -3,32 +3,38 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
  <div class="container" id="sign-up">
-  
-    <form class="form-sign col-sm-4">
+  <div class="row">
+    <form class="col-sm-4 col-md-4" role="form" data-toggle="validator">
       <h2>Sign up</h2>
-      <div class="field">
+      <div class="form-group">
         <% f.label :email %><br />
-        <%= f.email_field :email, class: "form-control", placeholder: "Email:", autofocus: true %>
+        <%= f.email_field :email, class: "form-control", id: "inputEmail", placeholder: "Email:", autofocus: true, :required => true, dataError: "Invalid emaild address" %>
       </div>
+      <div class="help-block with-errors"></div>
 
-      <div class="field">
+      <div class="form-group">
         <% f.label :password %>
         <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, class: "form-control", placeholder: "Password:", autocomplete: "off" %>
+        <em><% @minimum_password_length %> </em>
+        <% end %>
+        <%= f.password_field :password, class: "form-control", placeholder: "Password:", autocomplete: "off", :required => true, dataMinlength: "8" %>
+        <span class="help-block">Minimum of 8 characters</span>
       </div>
 
-      <div class="field">
-        <% f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm password:", autocomplete: "off" %>
+      <div class="form-group">
+        <% f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm password:", autocomplete: "off", :required => true, dataMatchError: "Whoops, these don't match" %>
+        <div class="help-block with-errors"></div>
       </div>
 
       <div class="actions">
         <%= f.submit "Sign up", class: "btn btn-primary btn-lg btn-block", id: "submit" %>
       </div>
+      <div>
+      <%= render "devise/shared/links" %>
+      </div>
     <% end %>
     </form>
+    </div>
   </div>
-
-<%= render "devise/shared/links" %>
+  

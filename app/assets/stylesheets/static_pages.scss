@@ -20,12 +20,20 @@ h2 {
 
 }
 
-.pull-right {
-	display: inline;
-}
 
+ul.nav.pull-right {
+  display: -webkit-inline-box;
+  position: relative;
+  right: 128px;
+  line-height: 26px;
+
+}
+.nav li a:focus {
+	background-color: none;
+}
 #log {
-	margin: 5px 40px 0 0;
+	/*margin: 5px 40px 0 0;*/
+	display: inline;
 }
 
 #alert {

@@ -4,6 +4,7 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  overflow-x: hidden;
 }
 
 p, ol, ul, td {
@@ -41,11 +42,11 @@ div {
   color: green;
 }
 
-.field_with_errors {
+/*.field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
-}
+}*/
 
 #error_explanation {
   width: 450px;

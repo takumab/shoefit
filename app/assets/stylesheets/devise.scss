@@ -2,6 +2,13 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+/* Error Explanation */
+
+#error_explanation {
+	margin-top: 50px;
+
+}
 /* Edit Page */
 
 .form-edit-heading {
@@ -41,10 +48,10 @@ input[type=submit].btn-block {
 .btn-info {
 	font-family: Oswald, sans-serif;
 	position: relative;
-	top: -80px;
-	left: 36.3%;
-	text-align: center;
-	width: 20%;
+	top: 13px;
+  left: 0%;
+  text-align: center;
+  width: 25%;
 	font-size: 1.5em;
 }
 
@@ -58,22 +65,21 @@ input[type=submit].btn-block {
 
 #sign-up {
 	position: relative;
-	bottom: 85px;
-	left: 27%;
+	left: 37%
+
+
 }
 
 /* Log in */
 
 #log-in {
 	position: relative;
-	bottom: 85px;
-	left: 27%;
+	left: 37%;
 }
 
 .forgot {
 	position: relative;
-	bottom: 85px;
-	left: 36.3%;
+	left: 46.5%;
 }
 
 .forgot a:hover {
