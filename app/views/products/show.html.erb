@@ -7,6 +7,7 @@
 		<%= render "new_comment" %>
 		<%= render "comments" %>
 		<p>Averag rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+		<%= will_paginate @comments %>
 	</div>
 
 
