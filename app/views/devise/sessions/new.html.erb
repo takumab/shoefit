@@ -4,25 +4,25 @@
 <div class="container" id="log-in">
   <h2>Log in</h2>
   <form class="form-logIn">
-    <div class="field">
+    <div class="form-group">
       <% f.label :email %><br />
       <%= f.email_field :email, class: "form-control", placeholder: "Email:", autofocus: true %>
     </div>
 
-    <div class="field">
+    <div class="form-group">
       <% f.label :password %><br />
       <%= f.password_field :password, class: "form-control", placeholder: "Passowrd:", autocomplete: "off" %>
     </div>
 
     <% if devise_mapping.rememberable? -%>
-      <div class="field">
+      <div class="form-group">
         <%= f.check_box :remember_me %>
         <%= f.label :remember_me %>
       </div>
     <% end -%>
 
     <div class="actions">
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <%= f.submit "Log in", class: "btn btn-primary btn-lg btn-block" %>
     </div>
     <% end %>
   </form>

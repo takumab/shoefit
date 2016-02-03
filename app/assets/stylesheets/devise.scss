@@ -20,6 +20,7 @@ input[type=button].btn-block,
 input[type=reset].btn-block, 
 input[type=submit].btn-block {
 	width: 25%;
+	font-family: Oswald,sans-serif;
 }
 
 #edit {
@@ -55,6 +56,11 @@ input[type=submit].btn-block {
 	font-size: 1.5em;
 }
 
+#forms {
+	position: relative;
+	left: 430px;
+}
+
 #info {
 	color: #fff;
 }
@@ -65,16 +71,18 @@ input[type=submit].btn-block {
 
 #sign-up {
 	position: relative;
-	left: 37%
-
-
+	/*background-color: red;*/
+	margin: 225px auto;
+	
 }
 
 /* Log in */
 
 #log-in {
 	position: relative;
-	left: 37%;
+	left: 30%;
+	line-height: 10%;
+
 }
 
 .forgot {

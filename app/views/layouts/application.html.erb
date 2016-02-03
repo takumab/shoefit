@@ -67,7 +67,13 @@
 	    	<div>
 					<ul class="nav pull-right">
 		    		<li>
-		    			<%= link_to('Sign up', new_user_registration_path) %>
+		    			<% if user_signed_in? %>
+		    				<% link_to('Sign up', new_user_registration_path) %>
+		    			<% else %>
+		    				<%= link_to('Sign up', new_user_registration_path) %>
+		    			<% end %>
+
+
 		    		</li>
 		    		<li id="log">
 		    			<% if user_signed_in? %>

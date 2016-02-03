@@ -3,7 +3,7 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
  <div class="container" id="sign-up">
-  <div class="row">
+  <div class="row" id="forms">
     <form class="col-sm-4 col-md-4" role="form" data-toggle="validator">
       <h2>Sign up</h2>
       <div class="form-group">
@@ -30,9 +30,7 @@
       <div class="actions">
         <%= f.submit "Sign up", class: "btn btn-primary btn-lg btn-block", id: "submit" %>
       </div>
-      <div>
-      <%= render "devise/shared/links" %>
-      </div>
+      
     <% end %>
     </form>
     </div>

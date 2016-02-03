@@ -69,10 +69,14 @@
 
 
 #big-show {
-position: relative;
-top: -50px;
-left: 18%;
-
+	position: relative;
+	top: -50px;
+	left: 0px;
+	/*background-color: aqua;*/
+	width: 42%;
+  padding: 200px 248px 0 79px;
+  height: 618px;
+  margin: 0px 45px 0px 0px;
 }
 
 #show {
@@ -89,5 +93,17 @@ left: 18%;
 .review {
 	position: relative;
 	bottom: 50px;
-	left: 40%;
+	left: 8%;
+	width: 46%;
 }
+
+#comments {
+	position: relative;
+	top: -112px;
+	right: -2%;
+	width: 46%;
+	margin: 80px;
+	padding-left: 5px;
+}
+
+

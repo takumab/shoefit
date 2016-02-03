@@ -1,13 +1,17 @@
 <p id="notice"><%= notice %></p>
-	<div class="detail">
-		<%= render "shared/show" %>
-	</div>
-
-	<div class="review">
+	<%= render "shared/show" %>
+	
+	<div class="review" style="background-color: pink;">
 		<%= render "new_comment" %>
-		<%= render "comments" %>
-		<p>Averag rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-		<%= will_paginate @comments %>
+	</div>
+	<div class="container" id="comments" style="background-color: blue;">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<%= render "comments" %><hr>
+				<p>Average rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+				<%= will_paginate @comments %>
+			</div>
+		</div>
 	</div>
 
 
