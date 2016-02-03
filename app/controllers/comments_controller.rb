@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 	
 	def index
-		@comments = Comment.paginate(:page => params[:page], :per_page => 5)
+
 	end
 
 	def show
@@ -32,6 +32,17 @@ class CommentsController < ApplicationController
 	end
 
 	def destroy
+		#retrieve product record from comment model.
+		@comment = Comment.find(params[:id])
+		
+		#assign that comment or product record to product.
+		product = @comment.product
+		
+		#destroy comment.
+		@comment.destroy
+		
+		#redirect_to product page. 
+		redirect_to product
 	end
 
 
