@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 /* Error Explanation */
@@ -19,7 +20,7 @@ body {
 input[type=button].btn-block, 
 input[type=reset].btn-block, 
 input[type=submit].btn-block {
-	width: 25%;
+	width: 66%;
 	font-family: Oswald,sans-serif;
 }
 
@@ -56,9 +57,14 @@ input[type=submit].btn-block {
 	font-size: 1.5em;
 }
 
-#forms {
-	position: relative;
-	left: 430px;
+#new_user{
+	min-width: 200px;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 1300px;
 }
 
 #info {
@@ -67,12 +73,13 @@ input[type=submit].btn-block {
 
 #submit {
 	font-family: Oswald, sans-serif;
+	width: 325px;
 }
 
 #sign-up {
 	position: relative;
-	/*background-color: red;*/
-	margin: 225px auto;
+	left: 30%;
+	line-height: 1;
 	
 }
 
@@ -81,13 +88,12 @@ input[type=submit].btn-block {
 #log-in {
 	position: relative;
 	left: 30%;
-	line-height: 10%;
+	line-height: 1.1;
 
 }
 
 .forgot {
-	position: relative;
-	left: 39.5%;
+	display: block;
 }
 
 .forgot a:hover {

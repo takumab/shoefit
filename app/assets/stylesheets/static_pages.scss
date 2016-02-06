@@ -23,10 +23,11 @@ h2 {
 
 ul.nav.pull-right {
   display: -webkit-inline-box;
+  display: -moz-inline-flex;
   position: relative;
   right: 128px;
   line-height: 26px;
-
+  
 }
 .nav li a:focus {
 	background-color: none;
