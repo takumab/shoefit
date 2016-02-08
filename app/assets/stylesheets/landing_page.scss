@@ -12,7 +12,7 @@
 	color: red;
 	font-size: 2em;
 	position: absolute;
-	width: 97px;
+  margin: 0 auto;
 
 
 }
@@ -37,14 +37,20 @@
 
  
 
-#land1.item {
-	margin-left: 40%;
-}
+/*#land1.item {
+	margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}*/
 
-#land2.item {
 
-	margin-left: 40%;
+#land1.item.active {
 
+	margin-left: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #land3.item {
@@ -57,6 +63,8 @@
 	margin: auto;
 	left: 47%;
 }
+
+
 /* End of Carousel */
 
 .col-xs-4 {

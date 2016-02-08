@@ -1,25 +1,24 @@
+<div class="container" id="contact">
+	<%= form_tag("/static_pages/thank_you") do %>
 
-<%= form_tag("/static_pages/thank_you") do %>
-<div class="row">
-	<div class="col-md-12" id="c-form">
 		<h1 style="font-family: Oswald, sans-serif;">Contact Us</h1>
-		<div class="form-group">
-		<%= label_tag :name, "Name" %>
-		<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter full name" %>
-		</div>
-		<div class="form-group">
-		<%= label_tag :email, "Email" %>
-		<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter email address" %>
-		</div>
-		<div class="form-group">
-		<%= label_tag :message, "Message" %>
-		<%= text_field_tag :message, nil, class: "form-control", placeholder: "Enter message" %>
-		</div>
-		<%= submit_tag "Send" %>
-	</div> <!-- ./col-md-4 -->
-</div> <!-- /.row -->
-
-<% end %>
+		<form>
+			<div class="form-group">
+				<%= label_tag :name, "Name" %>
+				<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter full name" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :email, "Email" %>
+				<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter email address" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :message, "Message" %>
+				<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter message" %>
+			</div>
+			<%= submit_tag "Submit", class: "btn btn-primary btn-lg btn-block", id: "contact_submit" %>
+		</form>
+	<% end %>
+</div>
 	
 	
 

@@ -86,6 +86,11 @@ ul.nav.pull-right {
 	padding-right: 0px;
 }
 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	margin: 0 auto;
+}
+
+
 img {
 	margin-left: 0px;
 
@@ -97,7 +102,7 @@ img {
 
 .carousel-caption {
 	bottom: 59%;
-	left: 8%;
+	left: 10%;
 	font-family: Lato, sans-serif;
 }
 
@@ -130,9 +135,16 @@ img {
 	width: 25%;
 }
 
-#c-form {
+#contact {
 	position: relative;
-	left: 3%;
+	left: 30%;
+	line-height: 1;
+	font-family: Oswald, sans-serif;
+}
+
+#contact_submit {
+	width: 28%;
+	font-family: Oswald, sans-serif;
 }
 
 /* Thank you */

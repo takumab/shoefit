@@ -20,15 +20,19 @@ body {
 input[type=button].btn-block, 
 input[type=reset].btn-block, 
 input[type=submit].btn-block {
-	width: 66%;
+	width: 25%;
 	font-family: Oswald,sans-serif;
 }
 
 #edit {
 	position: relative;
-	bottom: 85px;
-	left: 27%;
+	left: 30%;
+	line-height: 1;
 
+}
+
+#update {
+	width: 1300px;
 }
 
 #cancel {
@@ -88,7 +92,7 @@ input[type=submit].btn-block {
 #log-in {
 	position: relative;
 	left: 30%;
-	line-height: 1.1;
+	line-height: 1;
 
 }
 

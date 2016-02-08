@@ -11,16 +11,14 @@
        <!--Wrappers for slides-->
        <div class="carousel-inner" role="list-box">
           <% @products.each do |product| %> 
-          <div class="item active" id="land1">
+          <div class="item <%= " active"  if product == @products.first %>" id="land1">
             <%= image_tag(product.image_url) %>
             <div class="carousel-caption" id="caption1">
               <%= product.name %>
             </div>
-            <% end %>
           </div> <!--/item active-->
-          
-          
-       </div> <!--/Wrappers for slides-->
+            <% end %>
+        </div> <!--/Wrappers for slides-->
 
        <!--Controls-->
        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
