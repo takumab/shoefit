@@ -1,4 +1,4 @@
-  <div class="container-fluid" >
+  <div class="container" id="pro-order" >
     <div class="row">
       <% @products.each do |product| %>
         <div class="col-xs-4 col-md-4" id="product">
@@ -16,8 +16,8 @@
             <%= product.colour %>
           </p>
           <p>
-            <strong>Price$:</strong>
-            <%= product.price %>
+            
+            $ <%=  product.price %>
           </p>
           
             

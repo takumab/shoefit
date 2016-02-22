@@ -55,6 +55,8 @@ group :development, :test do
   gem 'spork-rails'
 
   gem 'guard-spork'
+
+  gem 'stripe'
 end
 
 group :production do

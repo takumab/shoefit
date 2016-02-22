@@ -27,9 +27,11 @@
  	background-color: #848482;
  	margin: 2%;
  	display: inline;
+}
 
- }
-
+#pro-order {
+	margin: auto;
+}
 .new-product {
 	
 	font-family: Oswald, sans-serif;
@@ -87,6 +89,7 @@
 	color: #fff;
 	font-family: Oswald, sans-serif;
 	font-size: 1.2em;
+
 }
 
 .review {
@@ -105,6 +108,12 @@
 	margin: 80px;
 	padding-left: 5px;
 
+}
+
+button.stripe-button-el {
+	position: relative;
+	top: -50px;
+  left: 109px;
 }
 
 
