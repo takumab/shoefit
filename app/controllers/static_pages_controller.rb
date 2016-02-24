@@ -3,10 +3,11 @@ class StaticPagesController < ApplicationController
   end
 
   def landing_page
-  	@products = Product.limit(3)
+    @products = Product.limit(3)
   end
 
   def thank_you
+    byebug
   	@name = params[:name]
   	@email = params[:email]
   	@message = params[:message]

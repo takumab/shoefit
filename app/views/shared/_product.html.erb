@@ -5,7 +5,9 @@
           <%= link_to image_tag(product.image_url, class: ["img-responsive", "thumbnail"]), product %> <!-- links to 'Details'/'Show' page -->
           <h4>
             <%= product.name %>
+            <% logger.debug "Product: #{product.name}" %>
           </h4>
+          
           <p>
             <%= product.image_url %>
           </p>
