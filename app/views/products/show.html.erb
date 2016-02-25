@@ -3,6 +3,7 @@
 	<%= form_tag "/payments/create" do %>
 					<%= render partial: "shared/stripe_checkout_button" %>
 					<%= hidden_field_tag(:product_id, @product.id ) %>
+					<% logger.debug "#{@product.id}" %>
 	<% end %>
 	<div class="review">
 		<%= render "new_comment" %>

@@ -1,4 +1,5 @@
 class PaymentsController < ApplicationController
+	before_action :redirect_if_not_logged_in
 
 	def create
 		@product = Product.find(params[:product_id])
@@ -6,8 +7,9 @@ class PaymentsController < ApplicationController
 		token = params[:stripeToken]
 		# Create the charge  on Stripe's servers - this will charge the user's card
 		begin
+
 				charge = Stripe::Charge.create(
-					:amount => @product.price, # threw an error because I spelled amount wrong. Problem solved!
+					:amount => @product.price, # threw an error because I spelled amount wrong. Problem solved! 
 					:currency => "usd",
 					:source => token,
 					:description => params[:stripeEmail]
@@ -15,7 +17,7 @@ class PaymentsController < ApplicationController
 				if charge.paid
 					Order.create(
 						:product_id => @product.id,
-						:user_id => @user.id,
+						:user_id => @user.id, # Payment only works if current user is signed in.
 						:total => @product.price
 
 						)
@@ -30,4 +32,9 @@ class PaymentsController < ApplicationController
 		end
 
 	end
+
+	private
+		def redirect_if_not_logged_in
+			redirect_to(new_user_registration_path) unless current_user
+		end
 end
