@@ -14,7 +14,7 @@ class PaymentsController < ApplicationController
 					:source => token,
 					:description => params[:stripeEmail]
 				)
-				if charge.paid
+				if charge.paid && signed_in?
 					Order.create(
 						:product_id => @product.id,
 						:user_id => @user.id, # Payment only works if current user is signed in.
