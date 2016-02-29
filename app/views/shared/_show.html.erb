@@ -1,7 +1,9 @@
 	<div class="container" id="big-show">
 		<div class="row">
 			<div class="col-xs-4" id="show">
-				<%= link_to image_tag(@product.image_url), @product %>
+				
+				<%=  image_tag(@product.image_url, id: "zoom", class: 'img-responsive img-zoom', data_zoom_image: @product.image_url) %>
+
 				<h4>
 					<strong><%= @product.name %></strong>
 				</h4>
