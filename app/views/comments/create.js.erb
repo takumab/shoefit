@@ -1,0 +1,14 @@
+$('#new_comment').html("Thank you for your review!");
+	$('#comments').prepend("<%= j render @comment %>");
+
+$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]'} );
+$('.rated').raty({ path: '/assets',
+		readOnly: true,
+		score: function() {
+			return $(this).attr('data-score');
+		}
+	}); // Raty rating stars
+
+
+//$.getScript("site.js");
+//console.log("hey mama");
