@@ -1,10 +1,9 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
+  respond_to :json, :html
   # GET /products
   # GET /products.json
   def index
-    #byebug
     if params[:q]
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
@@ -12,6 +11,7 @@ class ProductsController < ApplicationController
       @products = Product.all
     end
     logger.debug "Here is the #{search_term} shoe you asked for."
+    respond_with @products
   end
 
   # GET /products/1

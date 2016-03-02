@@ -1,22 +1,46 @@
 class OrdersController < ApplicationController
 	before_action :authenticate_user!
+	# Allows JSON requests w/o authenticity token
+	protect_from_forgery
+	skip_before_action :verify_authenticity_token, if: :json_request?
+	# Allows access through the JSON API. ":html" ensures access to orders controller through html pages.
+	respond_to :json, :html
 	
 	def index
-		@products = Product.all
+		@orders = Order.all.to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
+		# respond_with added to make actions respond to JSON
+		respond_with @orders
 	end
 
 	def show
+		@order = Order.find(params[:id]).to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
+		respond_with @order
 	end
 
 	def new
 	end
 
 	def create
+		@order = Order.create(order_params)
+		respond_with @order
 	end
 
 	def destroy
+		respond_with Order.destroy(params[:id])
 	end
 	 
+	protected
+
+	def json_request?
+		request.format.json?
+	end
+
+	private
+
+	def order_params
+		params.require(:order).permit(:product_id, :user_id, :total)
+
+	end
 
 end
 
