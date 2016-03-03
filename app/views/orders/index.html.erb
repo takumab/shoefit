@@ -8,8 +8,6 @@
 			<div ng-controller="OrdersCtrl"> 
 				<form class="form-inline" ng-submit="addOrder()">
 					<strong>Add order: </strong>
-
-					
 					<input type="number" step="0.01" class="form-control" placholder="Total" ng-model="newOrder.total">
 					<select class="form-control" ng-model="newOrder.product_id">
 						<!-- option 1 = placeholder -->
@@ -17,11 +15,11 @@
 						<option ng-repeat="product in products" value="{{product.id}}">{{product.name}}</option>
 					</select>
 
-					<input type="submit" value="+" class="btn btn-sucess">
+					<input type="button"  ng-click="addOrder()" value="+" class="btn btn-success">
 				</form>
 				<table class="table table-hover">
 					<thead>
-						<td>Order</td>
+						<td>Order #</td>
 						<td>Total</td>
 						<td>Product</td>
 						<td></td>

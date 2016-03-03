@@ -19,7 +19,7 @@ app.factory('models', ['$resource', function($resource){
 	};
 	return x;
 
-}]);
+}]); // app.factory
 
 app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
 		// All code belonging to controller goes here.
@@ -27,29 +27,34 @@ app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
 		// GETS data from $resource and turns it into a readable array.
 		$scope.orders = models.orders.query();
 		$scope.products = models.products.query();
+
 		
-		/*$scope.orders = [
-			{id: 1, total: 89, product_id: 1, user_id: 1},
-			{id: 2, total: 99, product_id: 1},
-			{id: 3, total: 89, product_id: 1, user_id: 1}
-		];*/
 		
-		$scope.addOrder = function(){
+		
+		$scope.addOrder = function(order){
 			// Makes sure product_id and total are filled out
-			if($scope.newOrder.product_id || $scope.newOrder.total === ''){ return; }
+			if(!$scope.newOrder.product_id || $scope.newOrder.total === ''){ return; }
 			order = models.orders.save($scope.newOrder, function(){
 				recent_order = models.orders.get({id: order.id});
 				$scope.orders.push(recent_order);
 				$scope.newOrder = '';
+
 			}); // order
 			
 		} // $scope.addOrder
 
 		// This function deletes existing orders
-		$scope.deleteOrder = function(){
-			$scope.orders.splice($scope.orders.indexOf(orders), 1);
+		$scope.deleteOrder = function(order){
+			$scope.orders.splice($scope.orders.indexOf(order), 1);
 			models.orders.delete(order);
 
-		}
+		} // $scope.deleteOrder
 
-	}]);
+	}]); // app.controller
+
+
+
+
+
+
+
