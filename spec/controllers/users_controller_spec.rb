@@ -6,6 +6,7 @@ describe UsersController, :type => :controller do
 		#@user = User.create!(email: "takumab@gmail.com", password: "12345678")
 		#@user2 = User.create!(email: "kewesi_mac@yahoo.com", password: "23456789")
 		@user = FactoryGirl.create(:user)
+		@user2 = FactoryGirl.create(:user)
 		
 	end
 
@@ -30,7 +31,7 @@ describe UsersController, :type => :controller do
 		end
 
 		#For Practice and Advanced section of 6.3
-		context "user cannot access user2 show page" do
+		context "User tries to gain access to user2 page" do
 			before do
 				sign_in @user
 			end #end of before
@@ -39,6 +40,8 @@ describe UsersController, :type => :controller do
 				get :show, id: @user2.id
 				expect(response).to have_http_status(401)
 				expect(response).to redirect_to(root_path)
+				
+				
 			end #end of "it"
 		end #end of user 1 cannot access user 2...
 
