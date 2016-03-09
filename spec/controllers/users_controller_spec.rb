@@ -31,19 +31,17 @@ describe UsersController, :type => :controller do
 		end
 
 		#For Practice and Advanced section of 6.3
-		context "User tries to gain access to user2 page" do
+		context "Prevent access to another user's page" do
 			before do
 				sign_in @user
-			end #end of before
+			end
 
 			it "redirects to root_path" do
-				get :show, id: @user2.id
-				expect(response).to have_http_status(401)
+				get :edit, id: @user2.id
+				expect(response).to_not have_http_status(200)
 				expect(response).to redirect_to(root_path)
-				
-				
 			end #end of "it"
-		end #end of user 1 cannot access user 2...
+		end 
 
 	end
 
