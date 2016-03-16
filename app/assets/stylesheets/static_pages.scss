@@ -52,10 +52,12 @@ ul.nav.pull-right {
 #bs-example-navbar-collapse-1 a:hover {
 	color: #E63B19;
 
-}
- .navbar-header .navbar-brand a {
-	color: #fff;
-	font-family: Oswald, sans-serif;
+} 
+
+.sf-brand {
+	
+	position: relative;
+	top: -14px;
 }
 
 .navbar-header .navbar-brand a:hover {
