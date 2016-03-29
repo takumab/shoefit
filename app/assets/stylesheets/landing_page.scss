@@ -80,8 +80,9 @@ img {
 
 img.landShoe {
 	position: relative;
-	left: 25%;
+	left: 23%;
 	margin-bottom: 17px;
+	width: 909px;
 }
 
 .shoe-1 {
@@ -100,7 +101,7 @@ img.landShoe {
 	
 	margin: 5% auto;
 	width: 1164px;
-	height: 1800px;
+	
 
 }
 
@@ -116,4 +117,40 @@ img.landShoe {
   left: 194px;
   font-family: 'Oswald', sans-serif;
   margin: 7px 0px 11px -15px;
+}
+
+#kicks {
+	font-size: 2em;
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	a:hover {
+		color: #fff;
+	}
+}
+
+#more2 {
+	background: rgb(247,147,30);
+	width: 909px;
+	height: 50px;
+	color: #000;
+	text-align: center;
+	position: relative;
+  left: 194px;
+  font-family: 'Oswald', sans-serif;
+  margin: 7px 0px 11px -15px;
+}
+
+#kicks2 {
+	font-size: 2em;
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	a:hover {
+		color: #fff;
+	}
 }
