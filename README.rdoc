@@ -1,7 +1,7 @@
 == README
 
 
-This app is for training purposes only. I am merely trying to improve upon existing knowledge of the Rails framework.
+This app is for training purposes only. I want to improve upon existing knowledge of the Rails framework.
 
 Things you may want to cover:
 
