@@ -1,40 +1,40 @@
-	<div class="container" id="big-show">
-		<div class="row">
-			<div class="col-xs-4" id="show">
-				
-				<%=  image_tag(@product.image_url, id: "zoom", class: 'img-responsive img-zoom', data_zoom_image: @product.image_url) %>
+<div class="container" id="big-show">
+	<div class="row">
+		<div class="col-xs-4" id="show">
+			
+			<%=  image_tag(@product.image_url, id: "zoom", class: 'img-responsive img-zoom', data_zoom_image: @product.image_url) %>
 
-				<h4>
-					<strong><%= @product.name %></strong>
-				</h4>
+			<h4>
+				<strong><%= @product.name %></strong>
+			</h4>
 
-				<p>
-				  <strong>Description:</strong>
-				  <%= @product.description %>
-				</p>
+			<p>
+			  <strong>Description:</strong>
+			  <%= @product.description %>
+			</p>
 
-				<p>
-				  <strong>Image url:</strong>
-				  <%= @product.image_url %>
-				</p>
+			<p>
+			  <strong>Image url:</strong>
+			  <%= @product.image_url %>
+			</p>
 
-				<p>
-					<strong>Colour</strong>
-					<%= @product.colour %>
-				</p>
+			<p>
+				<strong>Colour</strong>
+				<%= @product.colour %>
+			</p>
 
-				<p>
-					<strong>$</strong>
-					<%= @product.price %>
-				</p>
+			<p>
+				<strong>$</strong>
+				<%= @product.price %>
+			</p>
 
-				<button type="button" class="btn btn-default">
-					<%= link_to content_tag(:i, nil, class: "fa fa-pencil"), edit_product_path(@product) %>
-				</button>
-				<button type="button" class="btn btn-default">
-					<%= link_to content_tag(:i, nil, class: "fa fa-backward"), orders_path %>
-				</button>
-			</div>
+			<button type="button" class="btn btn-default">
+				<%= link_to content_tag(:i, nil, class: "fa fa-pencil"), edit_product_path(@product) %>
+			</button>
+			<button type="button" class="btn btn-default">
+				<%= link_to content_tag(:i, nil, class: "fa fa-backward"), orders_path %>
+			</button>
 		</div>
 	</div>
+</div>
 	
