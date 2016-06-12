@@ -1,3 +1,5 @@
+$primary-font: Oswald, sans-serif;
+
 body {
 	margin: 0;
 	padding: 0;
@@ -116,7 +118,7 @@ img {
 /* About page */
 #about {
 	text-align: center;
-	font-family: Oswald, sans-serif;
+	font-family: $primary-font;
 }
 
 #us {
@@ -142,12 +144,12 @@ img {
 	position: relative;
 	left: 30%;
 	line-height: 1;
-	font-family: Oswald, sans-serif;
+	font-family: $primary-font;
 }
 
 #contact_submit {
 	width: 28%;
-	font-family: Oswald, sans-serif;
+	font-family: $primary-font;
 }
 
 /* Thank you */
@@ -169,7 +171,7 @@ img {
     height: 60px;
     background-color: #000;
     color: #fff;
-    font-family: Oswald, sans-serif;
+    font-family: $primary-font;
     text-align: center;
     z-index: 1;
     
