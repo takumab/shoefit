@@ -9,7 +9,7 @@ class PaymentsController < ApplicationController
 		begin
 
 				charge = Stripe::Charge.create(
-					:amount => @product.price, # threw an error because I spelled amount wrong. Problem solved! 
+					:amount => @product.price,  
 					:currency => "usd",
 					:source => token,
 					:description => params[:stripeEmail]

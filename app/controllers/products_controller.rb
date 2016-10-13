@@ -10,7 +10,6 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
-    logger.debug "Here is the #{search_term} shoe you asked for."
     respond_with @products
   end
 
