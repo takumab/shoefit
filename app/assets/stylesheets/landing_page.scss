@@ -1,14 +1,19 @@
 
 
+/* Jumbotron */
+#jumbo {
+	background-image: image-url('sneaks_in_the_grass.jpeg');
+	background-size: cover;
+}
 /* Carousel */
 .container {
-	
+
 	margin-top: 15%;
 	padding: 0px;
 }
 
 #caption1 {
-	
+
 	color: red;
 	font-size: 2em;
 	position: absolute;
@@ -18,7 +23,7 @@
 }
 
 #caption2 {
-	
+
 	color: blue;
 	font-size: 2em;
 	position: absolute;
@@ -32,10 +37,10 @@
 	position: absolute;
 	width: 97px;
 
-	
+
 }
 
- 
+
 
 /*#land1.item {
 	margin-right: 10px;
@@ -58,7 +63,7 @@
 }
 
 #landing {
-	
+
 	width: 60px;
 	margin: auto;
 	left: 47%;
@@ -68,7 +73,7 @@
 /* End of Carousel */
 
 .col-xs-4 {
-	
+
 	left: 15%;
 	width: 460px;
 }
@@ -97,10 +102,10 @@ img.landShoe {
 
 
 #myContainer {
-	
+
 	margin: 5% auto;
 	width: 1164px;
-	
+
 
 }
 

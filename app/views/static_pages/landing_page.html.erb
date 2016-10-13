@@ -1,4 +1,8 @@
+<section class="jumbotron" id="jumbo">
+  <h1>Shoe Fit!</h1>
+  <p>If the shoe fits... Holla!</p>
 
+</section>
 <section class="container">
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!--indicators-->
@@ -10,7 +14,7 @@
 
     <!--Wrappers for slides-->
     <div class="carousel-inner" role="list-box">
-      <% @products.each do |product| %> 
+      <% @products.each do |product| %>
       <div class="item <%= " active"  if product == @products.first %>" id="land1">
         <%= image_tag(product.image_url) %>
         <div class="carousel-caption" id="caption1">
@@ -34,36 +38,36 @@
 </section><!--/.Container-->
 
 <section class="container" id="myContainer">
-  
-    
+
+
     <div class="row" id="row2">
       <%= link_to image_tag('garden-sitting-grass-shoes.jpg', class: "landing-pics col-sm-6 col-md-6 image-responsive"), products_path %>
-      
+
       <%= link_to image_tag('healthy-light-woman-legs.jpg', class: "landing-pics col-sm-6 col-md-6" ), products_path %>
     </div><!--row-2-->
 
     <div class="row" id="more">
-      <h4  class="col-sm-12 col-md-12" id="kicks"> 
+      <h4  class="col-sm-12 col-md-12" id="kicks">
         <%= link_to 'More Kicks! >', products_path %>
       <h4>
     </div>
     <div class="row" id="row3">
       <%= link_to image_tag('by_the_beach.jpg', class: "landing-pics col-sm-6 col-md-6") %>
-      
+
       <div class="">
         <%= link_to image_tag('chucks.jpg', class: "landing-pics col-sm-6 col-md-6") %>
       </div>
     </div><!--/.row-3-->
     <div class="row" id="more2">
-      <h4  class="col-xs-12 col-md-12" id="kicks2"> 
+      <h4  class="col-xs-12 col-md-12" id="kicks2">
         <%= link_to 'New Arrivals >', products_path %>
       <h4>
     </div>
     <div class="row" id="row4">
       <%= link_to image_tag('new_new.jpg', class: "landing-pics col-sm-6 col-md-6") %>
-      
+
       <%= link_to image_tag('nike_foot.jpg', class: "landing-pics col-sm-6 col-md-6") %>
     </div><!--/.row-4-->
 
-  
+
 </section>
