@@ -1,18 +1,20 @@
 <section class="jumbotron" id="jumbo">
-  <h1>Shoe Fit!</h1>
-  <p>If the shoe fits... Holla!</p>
-
+  <div class="container">
+    <h1>Shoe Fit!</h1>
+    <p>If the shoe fits... Holla!</p>
+  </div>
 </section>
+<!--
 <section class="container">
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!--indicators-->
+    indicators
     <ol class="carousel-indicators" id="landing">
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
 
-    <!--Wrappers for slides-->
+    Wrappers for slides
     <div class="carousel-inner" role="list-box">
       <% @products.each do |product| %>
       <div class="item <%= " active"  if product == @products.first %>" id="land1">
@@ -20,11 +22,11 @@
         <div class="carousel-caption" id="caption1">
           <%= product.name %>
         </div>
-      </div> <!--/item active-->
+      </div> /item active
         <% end %>
-    </div> <!--/Wrappers for slides-->
+    </div> /Wrappers for slides
 
-    <!--Controls-->
+    Controls
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -34,20 +36,24 @@
       <span class="sr-only">Next</span>
     </a>
 
- </div> <!--/Carousel-->
-</section><!--/.Container-->
+ </div> /Carousel
+</section>/.Container
+-->
 
 <section class="container" id="myContainer">
 
 
     <div class="row" id="row2">
-      <%= link_to image_tag('garden-sitting-grass-shoes.jpg', class: "landing-pics col-sm-6 col-md-6 image-responsive"), products_path %>
-
-      <%= link_to image_tag('healthy-light-woman-legs.jpg', class: "landing-pics col-sm-6 col-md-6" ), products_path %>
+      <div class="col-sm-6 col-md-6 landing-pics">
+        <%= link_to image_tag('garden-sitting-grass-shoes.jpg', class: "image-responsive"), products_path %>
+      </div>
+      <div class="col-sm-6 col-md-6 landing-pics">
+        <%= link_to image_tag('healthy-light-woman-legs.jpg', class: "image-responsive" ), products_path %>
+      </div>
     </div><!--row-2-->
 
     <div class="row" id="more">
-      <h4  class="col-sm-12 col-md-12" id="kicks">
+      <h4  class="col-xs-12 col-md-12" id="kicks">
         <%= link_to 'More Kicks! >', products_path %>
       <h4>
     </div>
