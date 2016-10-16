@@ -10,11 +10,11 @@ body {
 h1 {
 	color: black;
 	padding-top: 40px;
-	font-family: Lato, sans-serif;
+	font-family: Paprika, sans-serif;
 }
 
 h2 {
-	font-family: Lato, sans-serif;
+	font-family: Paprika, sans-serif;
 }
 
 /* Navbar */
@@ -47,7 +47,7 @@ ul.nav.pull-right {
 
 #bs-example-navbar-collapse-1 ul li a {
 	color: #fff;
-	font-family: Oswald, sans-serif;
+	font-family: Laila, sans-serif;
 	font-size: 1.2em;
 }
 
@@ -56,10 +56,9 @@ ul.nav.pull-right {
 
 }
 
-.sf-brand {
-
-	position: relative;
-	top: -14px;
+.navbar-brand a {
+	color: white;
+	font-family: $primary-font;
 }
 
 .navbar-header .navbar-brand a:hover {
@@ -79,7 +78,7 @@ ul.nav.pull-right {
   margin: 0;
   color: #fff;
   font-size: 1.4rem;
-  font-family: Oswald;
+  font-family: Laila;
   letter-spacing: .2rem;
   opacity: .85;
 }
@@ -89,6 +88,7 @@ ul.nav.pull-right {
 .landing-pics {
 	width: 597px;
 	height: 418.31px;
+	padding-top: 30px;
 }
 
 
