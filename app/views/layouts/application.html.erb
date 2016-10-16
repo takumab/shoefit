@@ -15,26 +15,28 @@
 <body>
 	<!-- Displays welcome msg when you sign in -->
 	<% if notice %>
-		<div id="notice_wrapper">	
+		<div id="notice_wrapper">
 			<p id="notice" class="alert alert-info"><%= notice %></p>
 		</div>
 	<% end %>
 
 	<% if alert %>
-		<div id="notice_wrapper">	
+		<div id="notice_wrapper">
 			<p id="alert" class="alert alert-info"><%= alert %></p>
 		</div>
 	<% end %>
 
 	<%= render 'layouts/nav' %>
-	
-	<footer class="footer">
-		<div class="copyright">
-			&copy; 2015 Tacuma Bell | All Rights Reserved. 
-		</div>
-	</footer>
+
+
 
 <%= yield %>
+
+<footer class="footer">
+  <div class="copyright">
+    &copy; 2015 Tacuma Bell | All Rights Reserved.
+  </div>
+</footer>
 
 </body>
 </html>

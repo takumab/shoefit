@@ -3,8 +3,8 @@ $primary-font: Oswald, sans-serif;
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #e7e7e7;
-	
+	background-color: #fff;
+
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-	font-family: Lato, sans-serif;	
+	font-family: Lato, sans-serif;
 }
 
 /* Navbar */
@@ -30,7 +30,7 @@ ul.nav.pull-right {
   position: relative;
   right: 128px;
   line-height: 26px;
-  
+
 }
 .nav li a:focus {
 	background-color: none;
@@ -54,10 +54,10 @@ ul.nav.pull-right {
 #bs-example-navbar-collapse-1 a:hover {
 	color: #E63B19;
 
-} 
+}
 
 .sf-brand {
-	
+
 	position: relative;
 	top: -14px;
 }
@@ -161,7 +161,7 @@ img {
 
 
 
-	
+
 /* Footer */
 
 .footer {
@@ -169,12 +169,12 @@ img {
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: #000;
+    background-color: #111;
     color: #fff;
     font-family: $primary-font;
     text-align: center;
     z-index: 1;
-    
+
 }
 
 
