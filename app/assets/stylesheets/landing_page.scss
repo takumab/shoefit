@@ -1,10 +1,11 @@
 
-
+$font: Laila, sans-serif;
 /* Jumbotron */
 #jumbo {
 	background-image: image-url('sneaks_in_the_grass2.jpg');
 	background-size: cover;
 	color: #fff;
+	font-family: $font;
 }
 /* Carousel */
 .container {
