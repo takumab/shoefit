@@ -1,0 +1,742 @@
+/* line 1, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+body {
+  margin: 0;
+  padding: 0;
+  /*overflow-x: hidden;*/
+}
+
+/* Error Explanation */
+/* line 9, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#error_explanation {
+  margin-top: 50px;
+}
+
+/* Edit Page */
+/* line 15, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+.form-edit-heading {
+  text-align: left;
+  font-family: Oswald, sans-serif;
+}
+
+/* line 20, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+input[type=button].btn-block,
+input[type=reset].btn-block,
+input[type=submit].btn-block {
+  width: 25%;
+  font-family: Oswald,sans-serif;
+}
+
+/* line 27, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#edit {
+  position: relative;
+  left: 30%;
+  line-height: 1;
+}
+
+/* line 34, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#update {
+  width: 1300px;
+}
+
+/* line 38, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#cancel {
+  font-family: Oswald, sans-serif;
+  position: relative;
+  top: -80px;
+  left: 36.3%;
+  text-align: left;
+  width: 20%;
+}
+/* line 46, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#cancel a:hover {
+  color: #0048BB;
+  text-decoration: none;
+}
+
+/* Sign up Page */
+/* line 55, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+.btn-info {
+  font-family: Oswald, sans-serif;
+  position: relative;
+  top: 13px;
+  left: 0%;
+  text-align: center;
+  width: 25%;
+  font-size: 1.5em;
+}
+
+/* line 65, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#new_user {
+  min-width: 200px;
+  max-width: 500px;
+}
+
+/* line 70, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+.form-group {
+  margin-bottom: 15px;
+  width: 1300px;
+}
+
+/* line 75, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#info {
+  color: #fff;
+}
+
+/* line 79, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#submit {
+  font-family: Oswald, sans-serif;
+  width: 325px;
+}
+
+/* line 84, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#sign-up {
+  position: relative;
+  left: 30%;
+  line-height: 1;
+}
+
+/* Log in */
+/* line 93, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+#log-in {
+  position: relative;
+  left: 30%;
+  line-height: 1;
+}
+
+/* line 100, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+.forgot {
+  display: block;
+}
+
+/* line 104, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/devise.scss */
+.forgot a:hover {
+  color: #0048BA;
+  text-decoration: none;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* Jumbotron */
+/* line 4, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#jumbo {
+  background-image: url(/assets/sneaks_in_the_grass2-78c59a48e1c1c0f376e41cfec00afc5f421aec12a99315f861a16a3c09ffc398.jpg);
+  background-size: cover;
+  color: #fff;
+  font-family: Laila, sans-serif;
+}
+
+/* Carousel */
+/* line 11, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+.container {
+  margin-top: 15%;
+  padding: 0px;
+}
+
+/* line 17, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#caption1 {
+  color: red;
+  font-size: 2em;
+  position: absolute;
+  margin: 0 auto;
+}
+
+/* line 27, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#caption2 {
+  color: blue;
+  font-size: 2em;
+  position: absolute;
+  width: 97px;
+}
+
+/* line 36, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#caption3 {
+  color: green;
+  font-size: 2em;
+  position: absolute;
+  width: 97px;
+}
+
+/*#land1.item {
+	margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}*/
+/* line 55, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#land1.item.active {
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* line 63, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#land3.item {
+  margin-left: 40%;
+}
+
+/* line 67, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#landing {
+  width: 60px;
+  margin: auto;
+  left: 47%;
+}
+
+/* End of Carousel */
+/* line 77, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+.extra-row {
+  width: 1200px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+/* line 83, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+.col-xs-4 {
+  left: 15%;
+  width: 460px;
+}
+
+/* line 93, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+img.landShoe {
+  position: relative;
+  left: 23%;
+  margin-bottom: 17px;
+  width: 909px;
+}
+
+/* line 100, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+.shoe-1 {
+  position: absolute;
+  top: 200px;
+  left: 460px;
+  width: 100%;
+  color: #E62727;
+  font-size: 4em;
+}
+
+/* More div */
+/* line 121, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#more {
+  background: #000;
+  width: 909px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 194px;
+  font-family: 'Oswald', sans-serif;
+  margin: 7px 0px 11px -15px;
+}
+
+/* line 133, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#kicks {
+  font-size: 2em;
+}
+/* line 135, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#kicks a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 140, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#kicks a:hover {
+  color: #fff;
+}
+
+/* line 145, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#more2 {
+  background: #f7931e;
+  width: 909px;
+  height: 50px;
+  color: #000;
+  text-align: center;
+  position: relative;
+  left: 194px;
+  font-family: 'Oswald', sans-serif;
+  margin: 7px 0px 11px -15px;
+}
+
+/* line 157, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#kicks2 {
+  font-size: 2em;
+}
+/* line 159, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#kicks2 a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 164, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/landing_page.scss */
+#kicks2 a:hover {
+  color: #fff;
+}
+/* line 1, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/orders.scss */
+.order-page {
+  text-align: center;
+  font-family: Oswald, sans-serif;
+}
+
+/* line 6, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/orders.scss */
+.oContainer {
+  position: relative;
+  top: -222px;
+}
+/* Font awesome */
+/* line 7, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.fa-backward {
+  color: #AF002A;
+}
+
+/* line 11, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.fa-pencil {
+  color: #AF002A;
+}
+
+/* line 15, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.fa-trash {
+  color: #AF002A;
+}
+
+/* Products Page */
+/* line 22, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+#product {
+  width: 300px;
+  height: 430px;
+  padding-top: 20px;
+  border-radius: 2%;
+  color: #fff;
+  background-color: #848482;
+  margin: 2%;
+  display: inline;
+}
+
+/* line 33, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+#pro-order {
+  margin: 0px auto 20px 100px;
+}
+
+/* line 36, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.new-product {
+  font-family: Oswald, sans-serif;
+  text-decoration: none;
+  position: fixed;
+  bottom: 80px;
+  padding-left: 2%;
+  word-spacing: 5px;
+}
+
+/* line 46, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.new-product a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 51, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+#pro-list {
+  text-align: center;
+  font-family: Oswald, sans-serif;
+}
+
+/* New Product Page */
+/* line 57, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.new {
+  position: relative;
+  left: 5%;
+  font-family: Oswald, sans-serif;
+}
+
+/* Show Page */
+/* line 67, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.show a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 74, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+#big-show {
+  position: relative;
+  top: -50px;
+  left: 0px;
+  width: 42%;
+  padding: 200px 248px 0 79px;
+  height: 618px;
+  margin: 0px 45px 0px 0px;
+}
+
+/* line 84, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+#show {
+  background-color: #848482;
+  width: 300px;
+  height: 410px;
+  padding-top: 20px;
+  border-radius: 2%;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 1.2em;
+}
+
+/* line 98, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+.review {
+  position: relative;
+  bottom: 50px;
+  left: 8.5%;
+  width: 46%;
+}
+
+/* line 106, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+#comments {
+  position: relative;
+  top: -112px;
+  right: -2%;
+  width: 46%;
+  margin: 80px;
+  padding-left: 5px;
+}
+
+/* line 116, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/products.scss */
+button.stripe-button-el {
+  position: relative;
+  top: -50px;
+  left: 109px;
+}
+/* line 1, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  overflow-x: hidden;
+}
+
+/* line 10, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* line 36, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 41, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/*.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}*/
+/* line 51, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 59, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 70, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 3, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* line 10, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+h1 {
+  color: black;
+  padding-top: 40px;
+  font-family: Paprika, sans-serif;
+}
+
+/* line 16, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+h2 {
+  font-family: Paprika, sans-serif;
+}
+
+/* Navbar */
+/* line 21, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  background-color: #000;
+}
+
+/* line 27, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+ul.nav.pull-right {
+  display: -webkit-inline-box;
+  display: -moz-inline-flex;
+  position: relative;
+  right: 128px;
+  line-height: 26px;
+}
+
+/* line 35, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.nav li a:focus {
+  background-color: none;
+}
+
+/* line 38, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#log {
+  /*margin: 5px 40px 0 0;*/
+  display: inline;
+}
+
+/* line 43, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#alert {
+  background-color: pink;
+}
+
+/* line 48, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#bs-example-navbar-collapse-1 ul li a {
+  color: #fff;
+  font-family: Laila, sans-serif;
+  font-size: 1.2em;
+}
+
+/* line 54, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#bs-example-navbar-collapse-1 a:hover {
+  color: #E63B19;
+}
+
+/* line 59, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.navbar-brand a {
+  color: white;
+  font-family: Paprika, sans-serif;
+}
+
+/* line 64, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.navbar-header .navbar-brand a:hover {
+  color: #E63B19;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 71, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#alert {
+  background-color: #B284BE;
+  width: 100%;
+  position: absolute;
+  top: 57px;
+  text-align: center;
+  padding: 2.5rem 0;
+  margin: 0;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: Laila;
+  letter-spacing: .2rem;
+  opacity: .85;
+}
+
+/* Landing page */
+/* line 88, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.landing-pics {
+  width: 597px;
+  height: 418.31px;
+  padding-top: 30px;
+}
+
+/* Carousel */
+/* line 96, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 101, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  margin: 0 auto;
+}
+
+/* line 106, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+img {
+  margin-left: 0px;
+}
+
+/* line 111, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.carousel-slide .carousel-indicators {
+  z-index: -1;
+}
+
+/* line 115, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  bottom: 59%;
+  left: 10%;
+  font-family: Lato, sans-serif;
+}
+
+/* line 121, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators {
+  bottom: 15%;
+}
+
+/* About page */
+/* line 126, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#about {
+  text-align: center;
+  font-family: Paprika, sans-serif;
+}
+
+/* line 131, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#us {
+  margin-top: 60px;
+}
+
+/* line 135, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.newbalance {
+  position: relative;
+  left: -25%;
+  opacity: .29;
+  border-color: #e7e7e7;
+  border-radius: 28%;
+}
+
+/* Contact page */
+/* line 146, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  width: 25%;
+}
+
+/* line 150, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#contact {
+  position: relative;
+  left: 30%;
+  line-height: 1;
+  font-family: Paprika, sans-serif;
+}
+
+/* line 157, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+#contact_submit {
+  width: 28%;
+  font-family: Paprika, sans-serif;
+}
+
+/* Thank you */
+/* line 164, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.panel-default {
+  margin-top: 58px;
+  color: #3399FF;
+}
+
+/* Footer */
+/* line 174, /Users/tacumabell/Downloads/cf_rails/app/assets/stylesheets/static_pages.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #111;
+  color: #fff;
+  font-family: Paprika, sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+/*// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+ 
+ .navbar-left {
+  	margin-left: 50px;
+ }
+
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}

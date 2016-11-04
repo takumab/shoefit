@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#XMLID_3_);}
+	.st1{fill:#FF7F00;stroke:#000707;stroke-miterlimit:10;}
+	.st2{font-family:'ImprintMT-Shadow';}
+	.st3{font-size:37.207px;}
+	.st4{font-size:23.126px;}
+</style>
+<g id="Layer_1">
+</g>
+<g id="Layer_2">
+	<g>
+		<defs>
+			<ellipse id="XMLID_1_" cx="377.6" cy="157.1" rx="16.7" ry="14.6"/>
+		</defs>
+		<use xlink:href="#XMLID_1_"  style="overflow:visible;fill:#FF7F00;"/>
+		<clipPath id="XMLID_3_">
+			<use xlink:href="#XMLID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st0">
+			<text transform="matrix(0.8761 0 0 1 370.6934 162.3271)" class="st1 st2 st3">s</text>
+			<text transform="matrix(0.797 0 0 1 374.2881 169.9707)" class="st1 st2 st4">F</text>
+		</g>
+		<use xlink:href="#XMLID_1_"  style="overflow:visible;fill:none;stroke:#000707;stroke-miterlimit:10;"/>
+	</g>
+</g>
+</svg>
