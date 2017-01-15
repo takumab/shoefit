@@ -16,14 +16,14 @@
 
     Wrappers for slides
     <div class="carousel-inner" role="list-box">
-      <% @products.each do |product| %>
-      <div class="item <%= " active"  if product == @products.first %>" id="land1">
+      <% #@products.each do |product| %>
+      <div class="item <%#= " active"  if product == @products.first %>" id="land1">
         <%= image_tag(product.image_url) %>
         <div class="carousel-caption" id="caption1">
           <%= product.name %>
         </div>
       </div> /item active
-        <% end %>
+        <% #end %>
     </div> /Wrappers for slides
 
     Controls
