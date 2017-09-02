@@ -22,7 +22,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'angularjs-rails'
-gem "intercom-rails"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -37,7 +36,6 @@ gem 'puma', '~> 3.0'
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -62,6 +60,10 @@ group :development, :test do
 
 end
 
+group :development do
+  gem 'web-console', '~> 3.0'
+end
+
 group :production do
 	#gem 'rails_12factor'
 	gem 'pg'
@@ -77,5 +79,3 @@ gem 'stripe'
 gem 'dalli'
 
 gem 'redis-rails'
-
-gem 'mailboxer'

@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-	#before_action :authenticate_user!
+	before_action :authenticate_user!
 	# Allows JSON requests w/o authenticity token
 	protect_from_forgery
 	skip_before_action :verify_authenticity_token, if: :json_request?
@@ -8,7 +8,6 @@ class OrdersController < ApplicationController
 
 	def index
 		@orders = Order.all.to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
-		#respond_with added to make actions respond to JSON
 		respond_with @orders
 	end
 

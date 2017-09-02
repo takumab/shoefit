@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160428125357) do
+ActiveRecord::Schema.define(version: 20170902073518) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "user_id"
@@ -29,34 +29,6 @@ ActiveRecord::Schema.define(version: 20160428125357) do
     t.integer "conversation_id"
     t.index ["conversation_id"], name: "index_mailboxer_conversation_opt_outs_on_conversation_id"
     t.index ["unsubscriber_id", "unsubscriber_type"], name: "index_mailboxer_conversation_opt_outs_on_unsubscriber_id_type"
-  end
-
-  create_table "mailboxer_conversations", force: :cascade do |t|
-    t.string   "subject",    default: ""
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-  end
-
-  create_table "mailboxer_notifications", force: :cascade do |t|
-    t.string   "type"
-    t.text     "body"
-    t.string   "subject",              default: ""
-    t.integer  "sender_id"
-    t.string   "sender_type"
-    t.integer  "conversation_id"
-    t.boolean  "draft",                default: false
-    t.string   "notification_code"
-    t.integer  "notified_object_id"
-    t.string   "notified_object_type"
-    t.string   "attachment"
-    t.datetime "updated_at",                           null: false
-    t.datetime "created_at",                           null: false
-    t.boolean  "global",               default: false
-    t.datetime "expires"
-    t.index ["conversation_id"], name: "index_mailboxer_notifications_on_conversation_id"
-    t.index ["notified_object_id", "notified_object_type"], name: "index_mailboxer_notifications_on_notified_object_id_and_type"
-    t.index ["sender_id", "sender_type"], name: "index_mailboxer_notifications_on_sender_id_and_sender_type"
-    t.index ["type"], name: "index_mailboxer_notifications_on_type"
   end
 
   create_table "mailboxer_receipts", force: :cascade do |t|
