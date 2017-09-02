@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Shoe Fit</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= csrf_meta_tags %>
+  <head>
+    <title>Shoe Fit</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Laila|Paprika" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<!-- Displays welcome msg when you sign in -->
-	<% if notice %>
-		<div id="notice_wrapper">
-			<p id="notice" class="alert alert-info"><%= notice %></p>
-		</div>
-	<% end %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Laila|Paprika" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<!-- Displays welcome msg when you sign in -->
+  	<% if notice %>
+  		<div id="notice_wrapper">
+  			<p id="notice" class="alert alert-info"><%= notice %></p>
+  		</div>
+  	<% end %>
 
-	<% if alert %>
-		<div id="notice_wrapper">
-			<p id="alert" class="alert alert-info"><%= alert %></p>
-		</div>
-	<% end %>
+  	<% if alert %>
+  		<div id="notice_wrapper">
+  			<p id="alert" class="alert alert-info"><%= alert %></p>
+  		</div>
+  	<% end %>
 
-	<%= render 'layouts/nav' %>
+  	<%= render 'layouts/nav' %>
 
 
+    <div class="wrap">
+      <%= yield %>
+    </div>
 
-<%= yield %>
+    <footer class="footer">
+      <div class="copyright">
+        &copy; 2015 Tacuma Bell | All Rights Reserved.
+      </div>
+    </footer>
 
-<footer class="footer">
-  <div class="copyright">
-    &copy; 2015 Tacuma Bell | All Rights Reserved.
-  </div>
-</footer>
-
-</body>
+  </body>
 </html>
