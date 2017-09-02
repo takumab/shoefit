@@ -1,24 +1,21 @@
 <section>
-	
+
 		<p id="notice"><%= notice %></p>
 
 		<h1 id="pro-list">Products</h1>
-		
+
 
 		<% cache(cache_key_for_products) do %>
-			
+
 		<div class="partial">
 		  <%= render "shared/product" %>
 		</div>
 		<% end %>
-		
-		<div class="new-product">
-			<%= link_to 'New Product', new_product_path %>
-			<%= link_to 'Products', products_path %>
-		</div>
-	
+		<% if can? :create, @product %>
+			<div class="new-product">
+				<%= link_to 'New Product', new_product_path %>
+				<%= link_to 'Products', products_path %>
+			</div>
+		<% end %>
+
 </section>
-
-
-
-
