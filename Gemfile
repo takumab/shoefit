@@ -32,7 +32,7 @@ gem 'angularjs-rails'
 # gem 'capistrano-rails', group: :development
 
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.12'
 
 group :development, :test do
   gem 'byebug'
